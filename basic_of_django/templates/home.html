@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <marquee behavior="" direction=""><h1 style="color: red;">Hello {{name}}</h1></marquee>
+    <center><p>Welcome To my World</p></center>
+    
+    <ul>
+        <li>hey baby</li>
+        <li>hey fk</li>
+    </ul>
+
+
+    <ul>
+        {% for i in lst %}
+            {% if i > 55  %} 
+                <li>{{i}}</li>
+            {% else %}
+                <li>{{i|add:1}}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+{% endblock %}
